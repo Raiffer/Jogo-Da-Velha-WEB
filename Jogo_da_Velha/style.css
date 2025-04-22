@@ -1,0 +1,137 @@
+  @keyframes piscar {
+    0% { opacity: 1; }  
+    50% { opacity: 0; }
+    100% { opacity: 1; } 
+  }
+  
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background-color: #f4f4f4; 
+  }
+
+  .grid-container {
+    display: none; 
+    grid-template-columns: repeat(3, 150px); 
+    grid-template-rows: repeat(3, 150px); 
+    gap: 10px; 
+  }
+
+  .clickable-square {
+    background-color: #3498db; 
+    position: relative;
+    display: grid; 
+    align-items: center;
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+  }
+
+  .clickable-square:hover {
+    background-color: #2980b9; 
+  }
+
+  .option{
+    width: 100%; 
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  }
+
+
+
+  .option-piscando{
+    animation: piscar 1s infinite;
+  }
+
+  .letter{
+    width: 100%; 
+    height: 100%;
+    top: 0; 
+    left: 0;  
+  }
+
+  .disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.menu-container {
+  text-align: center;
+  position:absolute;
+}
+
+.menu-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.menu-container button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu-container button:hover {
+  background-color: #2980b9;
+}
+
+.fim-container {
+  display: none;
+  text-align: center;
+  position:absolute;
+}
+
+.fim-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.fim-container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.winner {
+  width: 100;
+  justify-content: center;
+}
+
+.fim-container button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.fim-container button:hover {
+  background-color: #2980b9;
+}
+
+.texto {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}

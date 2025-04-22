@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="menu-container" id="menu">
+        <h1>Jogo da Velha</h1>
+        <button onclick="comecar()">Jogar</button>
+    </div>
+
+    <div class="grid-container" id="jogo">
+        <div id = "caixa-1" class="clickable-square" onclick="trocar(0,0)">
+            <figure>
+                <img id = "00" class="option">
+            </figure>
+        </div>
+        <div id = "caixa-2" class="clickable-square" onclick="trocar(0,1)">
+            <figure>
+                <img id = "01" class="option">
+            </figure>
+        </div>
+        <div id = "caixa-3" class="clickable-square" onclick="trocar(0,2)">
+            <figure>
+                <img id = "02" class="option">
+            </figure>
+        </div>
+        <div id = "caixa-4" class="clickable-square" onclick="trocar(1,0)">
+            <figure>
+                <img id = "10" class="option">
+            </figure>
+        </div>
+        <div id = "caixa-5" class="clickable-square" onclick="trocar(1,1)">
+            <figure>
+                <img id = "11" class="option">
+            </figure>
+        </div>
+        <div id = "caixa-6" class="clickable-square" onclick="trocar(1,2)">
+            <figure>
+                <img id = "12" class="option">
+            </figure>
+        </div>
+        <div id = "caixa-7" class="clickable-square" onclick="trocar(2,0)">
+            <figure>
+                <img id = "20" class="option">
+            </figure>
+        </div>
+        <div id = "caixa-8" class="clickable-square" onclick="trocar(2,1)">
+            <figure>
+                <img id = "21" class="option">
+            </figure>
+        </div>
+        <div id = "caixa-9" class="clickable-square" onclick="trocar(2,2)">
+            <figure>
+                <img id = "22" class="option">
+            </figure>
+        </div>
+    </div>
+    <div class="fim-container" id="fim">
+        <h1>Fim de Jogo</h1>
+        <img class="winner" width="50" id="vencedor" src="imagens/O.png">
+        <h2>venceu</h2>
+        <button onclick="recomecar()">Novo Jogo</button>
+        
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
